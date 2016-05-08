@@ -1,13 +1,22 @@
+// PREPARING ACM.ICPC 2018
+// NKLINEUP - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
+//--------------------------------------------------
+
 #include <iostream>
 #define Maxn 50000
+
 using namespace std;
+
 //a bieu dien cay IT the hien tong cac doan, b la cay IT bieu dien GTLN trong cac doan
 int n,m,a[4*Maxn+1],b[4*Maxn+1],p;
 //Khoi tao cay IT voi cac phan tu ban dau co gia tri bang 0
+
 void init_a()
 {
     for (int i=1;i<=4*n;i++) a[i]=0;
 }
+
 //Cap nhat cac doan thuoc [u..v] sau khi cac phan tu trong doan nay co gia tri tang len k
 void update_a(int current, int Front, int Rear, int u, int v, int k)
 {
@@ -26,6 +35,7 @@ void update_a(int current, int Front, int Rear, int u, int v, int k)
     update_a(current*2+1,Mid+1,Rear,u,v,k);
     a[current]=a[current*2]+a[current*2+1];
 }
+
 // Tim gia tri phan tu vi tri pos cua mang
 int get_value(int current, int Front, int Rear, int pos)
 {
@@ -40,6 +50,7 @@ int get_value(int current, int Front, int Rear, int pos)
     if (Mid>=pos) return get_value(current*2,Front,Mid,pos);
     return get_value(current*2+1,Mid+1,Rear,pos);
 }
+
 //Khoi tao gia tri lon nhat cua cac doan trong cay IT
 void init_b()
 {
@@ -59,6 +70,7 @@ void update_b(int current, int Front, int Rear, int pos, int value)
     else update_b(current*2+1,Mid+1,Rear,pos,value);
     b[current]=b[current*2]>b[current*2+1]?b[current*2]:b[current*2+1];
 }
+
 void findmax(int current, int Front, int Rear, int u, int v, int &res)
 {
     //Neu nut dang xet khong giao voi [u..v] thi return
@@ -74,6 +86,7 @@ void findmax(int current, int Front, int Rear, int u, int v, int &res)
     findmax(current*2,Front, Mid, u,v,res);
     findmax(current*2+1,Mid+1,Rear,u,v,res);
 }
+
 int main()
 {
     //Doc so phan tu va m truy van
