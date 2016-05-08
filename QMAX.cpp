@@ -10,8 +10,8 @@ using namespace std;
 
 //a bieu dien cay IT the hien tong cac doan, b la cay IT bieu dien GTLN trong cac doan
 int n,m,a[4*Maxn+1],b[4*Maxn+1],p;
-//Khoi tao cay IT voi cac phan tu ban dau co gia tri bang 0
 
+//Khoi tao cay IT voi cac phan tu ban dau co gia tri bang 0
 void init_a()
 {
     for (int i=1;i<=4*n;i++) a[i]=0;
@@ -56,6 +56,8 @@ void init_b()
 {
     for (int i=1;i<=4*n;i++) b[i]=0;
 }
+
+//Cap nhat gia tri lon nhat trong cac doan chua pos
 void update_b(int current, int Front, int Rear, int pos, int value)
 {
     //Neu nut dang xet co mot phan tu thi cap nhat GTLN
@@ -71,6 +73,7 @@ void update_b(int current, int Front, int Rear, int pos, int value)
     b[current]=b[current*2]>b[current*2+1]?b[current*2]:b[current*2+1];
 }
 
+//Tim gia tri lon nhat trong doan [u..v]
 void findmax(int current, int Front, int Rear, int u, int v, int &res)
 {
     //Neu nut dang xet khong giao voi [u..v] thi return
