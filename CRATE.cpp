@@ -1,3 +1,8 @@
+// PREPARING ACM.ICPC 2018
+// NKLINEUP - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
+//--------------------------------------------------
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
