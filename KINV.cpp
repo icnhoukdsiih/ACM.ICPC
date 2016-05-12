@@ -1,5 +1,5 @@
 // PREPARING ACM.ICPC 2018
-// NKLINEUP - CODED BY ICNHOUKDSIIH
+// KINV - CODED BY ICNHOUKDSIIH
 // CONTACT ME: https://icnhoukdsiih.blogspot.com/
 //--------------------------------------------------
 
