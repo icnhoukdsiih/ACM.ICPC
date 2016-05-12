@@ -1,5 +1,5 @@
 // PREPARING ACM.ICPC 2018
-// NKLINEUP - CODED BY ICNHOUKDSIIH
+// QMAX2 - CODED BY ICNHOUKDSIIH
 // CONTACT ME: https://icnhoukdsiih.blogspot.com/
 //--------------------------------------------------
 
