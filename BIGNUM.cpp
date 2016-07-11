@@ -6,13 +6,16 @@
 
 using namespace std;
 
+//Kiểu cấu trúc lưu trữ số lớn
 struct bignum {
     int n;
     int a[2002];
 };
+//Khởi tạo số lớn
 void reset(bignum &num) {
     for (int i=0;i<=2000;i++) num.a[i]=0;
 }
+//Đọc thông tin 1 số 
 void read(bignum &num) {
     char s[1002];
     scanf("%s%*c",s);
@@ -20,6 +23,7 @@ void read(bignum &num) {
     reset(num);
     for (int i=num.n-1;i>=0;i--) num.a[num.n-i-1]=s[i]-'0';
 }
+//Cộng hai số lớn
 void cong(bignum A, bignum B, bignum &C) {
     reset(C);
     int nho=0,l=(A.n>B.n?A.n:B.n);
@@ -33,6 +37,7 @@ void cong(bignum A, bignum B, bignum &C) {
         C.n++;
     }
 }
+//So sánh hai số lớn
 bool compare(bignum A, bignum B) {
     if (A.n>B.n) return 1;
     if (A.n<B.n) return 0;
@@ -42,6 +47,7 @@ bool compare(bignum A, bignum B) {
         else return 0;
     }
 }
+//Trừ hai số lớn
 void tru(bignum A, bignum B, bignum &C, int dau) {
     reset(C);
     int nho=0;
@@ -57,6 +63,7 @@ void tru(bignum A, bignum B, bignum &C, int dau) {
     while (C.n>1 && C.a[C.n-1]==0) C.n--;
     C.a[C.n-1]*=dau;
 }
+//Nhân hai số lớn
 void nhan(bignum A, bignum B, bignum &C) {
     reset(C);
     for (int i=0;i<A.n;i++)
@@ -70,6 +77,7 @@ void nhan(bignum A, bignum B, bignum &C) {
     C.n=A.n+B.n;
     while (C.n>1 && C.a[C.n-1]==0) C.n--;
 }
+//Xuất 1 số lớn 
 void xuat(bignum C) {
     for (int i=C.n-1;i>=0;i--) printf("%d",C.a[i]);
     printf("\n");
