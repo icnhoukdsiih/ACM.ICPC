@@ -6,8 +6,8 @@
 using namespace std;
 const long long mod = 111539786;
 int t, n; 
-// Ta có  f[i]		= 0 * f[i - 1] + 1 * f[i]
-//		  f[i + 1]	= 1 * f[i - 1] + 1 * f[i]
+// Ta có  	f[i]		= 0 * f[i - 1] + 1 * f[i]
+//		f[i + 1]	= 1 * f[i - 1] + 1 * f[i]
 // Suy ra [f[i], f[i + 1]] = [0, 1; 1, 1] * [f[i - 1], f[i]]
 //		  [f[i], f[i + 1]] = [0, 1; 1, 1] ^ i * [f[0], f[1]]
 long long a[2][2]={{0,1},{1,1}}, res[2][2]; //Mảng a lưu ma trận ban đầu, res là ma trận tính a^n
