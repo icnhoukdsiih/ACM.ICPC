@@ -1,3 +1,6 @@
+// PREPARING ACM.ICPC 2018
+// 10092UVA - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
 #include <bits/stdc++.h>
 using namespace std;
 const int INF = 200; 
