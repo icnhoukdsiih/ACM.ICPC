@@ -1,3 +1,6 @@
+// PREPARING ACM.ICPC 2018
+// 259UVA - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
 //Luu y dong cuoi co the khong phai la dong trong
 #include <stdio.h>
 #include <stdlib.h>
