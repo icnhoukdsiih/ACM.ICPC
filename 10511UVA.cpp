@@ -1,3 +1,6 @@
+// PREPARING ACM.ICPC 2018
+// 10511UVA - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
 //s	->w(1)->	clubs(40000)	->w(1)->	residents(1000)	->w(1)->	party(1000)	->w(|clubs-1|/2)->	t
 // Can than phan tim luong cuc dai
 #include <bits/stdc++.h>
