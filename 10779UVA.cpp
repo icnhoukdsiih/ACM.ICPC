@@ -1,3 +1,6 @@
+// PREPARING ACM.ICPC 2018
+// 10779UVA - CODED BY ICNHOUKDSIIH
+// CONTACT ME: https://icnhoukdsiih.blogspot.com/
 //S ->w(so items) -> m items (bob) -> w(1) -> n-1 nguoi(tru bob)  -> w(so items -1) -> m items(nhung nguoi khac) -> w(1) -> T
 //                   m items (bob)                  -> w(so items) ->                  m items(nhung nguoi khac)
 //                   m items(nhung nguoi khac))     -> w(INF)      ->                  m items (bob)
