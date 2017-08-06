@@ -1,4 +1,4 @@
-// PREPARING ACM.ICPC 2018/home/icnhoukdsiih/Desktop/input.txt
+// PREPARING ACM.ICPC 2018
 // 10005UVA - CODED BY ICNHOUKDSIIH
 // CONTACT ME: https://icnhoukdsiih.blogspot.com/
 #include <bits/stdc++.h>
